@@ -1,0 +1,30 @@
+<main>
+    <!-- Job Count and Sorting -->
+    <div class="job-count-sort">
+        <div id="job-count">Tổng số công việc: <span id="total-jobs">0</span></div>
+        <div>
+            <label for="sort-by">Sắp xếp theo:</label>
+            <select id="sort-by">
+                <option value="most-recent">Mới nhất</option>
+                <option value="relevance">Liên quan</option>
+                <option value="oldest">Cũ nhất</option>
+                <option value="highest-salary">Lương cao nhất</option>
+                <option value="least-experience">Ít kinh nghiệm nhất</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading">Đang tải công việc...</div>
+
+    <!-- Error Message -->
+    <div id="error">Không thể tải công việc. Vui lòng thử lại sau.</div>
+
+    <!-- No Results Message -->
+    <div id="no-results">Không tìm thấy công việc phù hợp. Hãy thử điều chỉnh tìm kiếm hoặc bộ lọc.</div>
+
+    <!-- Job Listings -->
+    <div id="job-listings" class="job-listings">
+        <!-- Job listings will be dynamically inserted here -->
+    </div>
+</main>
