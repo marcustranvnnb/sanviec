@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - SanViec</title>
+    <meta name="description" content="Search results for jobs on SanViec.">
+    <meta name="author" content="SanViec">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/joblist.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1 class="search-results-heading">Search Results</h1>
+        <div class="search-filters">
+            <!-- Additional filters go here -->
+        </div>
+        
+        <div id="job-container" class="job-container">
+            <!-- Job cards will be inserted here by JavaScript -->
+        </div>
+        <div id="job-container" class="job-container">
+            <!-- Job cards will be inserted here by JavaScript -->
+        </div>
+        <script src="../js/search.js"></script>
+    </main>
+
+    <!-- JavaScript to load the header -->
+    <script>
+        fetch('../html/header.html') <!-- Correct path to header.html -->
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the header:', error));
+    </script>
+</body>
+</html>

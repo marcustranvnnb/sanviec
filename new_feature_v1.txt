@@ -1,0 +1,9 @@
+Job Alerts:
+
+Allow users to set up email or push notifications for new job postings that match their criteria (e.g., job type, location, skills).
+
+Advanced Search Filters:
+
+Add filters for location, salary range, experience level, and industry.
+
+Implement a "Save Search" feature for users to reuse their search criteria.

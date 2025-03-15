@@ -1,0 +1,263 @@
+[
+    {
+        "jobTitle": "Frontend Developer",
+        "company": "Tech Corp",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["HTML", "CSS", "JavaScript", "React"],
+        "postedDate": "2023-10-01",
+        "applicationLink": "https://example.com/apply/frontend"
+    },
+    {
+        "jobTitle": "Backend Developer",
+        "company": "Code Masters",
+        "workingType": "On-Site",
+        "jobType": "Part-Time",
+        "skills": ["Node.js", "Express", "MongoDB"],
+        "postedDate": "2023-10-05",
+        "applicationLink": "https://example.com/apply/backend"
+    },
+    {
+        "jobTitle": "UI/UX Designer",
+        "company": "Design Studio",
+        "workingType": "Hybrid",
+        "jobType": "Contract",
+        "skills": ["Figma", "Sketch", "Adobe XD"],
+        "postedDate": "2023-10-10",
+        "applicationLink": "https://example.com/apply/uiux"
+    },
+    {
+        "jobTitle": "Data Scientist",
+        "company": "Data Insights Inc.",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["Python", "Machine Learning", "SQL", "Pandas"],
+        "postedDate": "2023-10-12",
+        "applicationLink": "https://example.com/apply/datascientist"
+    },
+    {
+        "jobTitle": "DevOps Engineer",
+        "company": "Cloud Solutions",
+        "workingType": "Hybrid",
+        "jobType": "Full-Time",
+        "skills": ["AWS", "Docker", "Kubernetes", "CI/CD"],
+        "postedDate": "2023-10-15",
+        "applicationLink": "https://example.com/apply/devops"
+    },
+    {
+        "jobTitle": "Mobile App Developer",
+        "company": "App Innovators",
+        "workingType": "Remote",
+        "jobType": "Contract",
+        "skills": ["Flutter", "Dart", "Firebase", "REST APIs"],
+        "postedDate": "2023-10-18",
+        "applicationLink": "https://example.com/apply/mobileapp"
+    },
+    {
+        "jobTitle": "Product Manager",
+        "company": "Tech Innovators",
+        "workingType": "On-Site",
+        "jobType": "Full-Time",
+        "skills": ["Agile", "Scrum", "Product Roadmap", "JIRA"],
+        "postedDate": "2023-10-20",
+        "applicationLink": "https://example.com/apply/productmanager"
+    },
+    {
+        "jobTitle": "Cybersecurity Analyst",
+        "company": "Secure Networks",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["SIEM", "Firewalls", "Penetration Testing", "NIST"],
+        "postedDate": "2023-10-22",
+        "applicationLink": "https://example.com/apply/cybersecurity"
+    },
+    {
+        "jobTitle": "Cloud Architect",
+        "company": "Cloud Builders",
+        "workingType": "Hybrid",
+        "jobType": "Full-Time",
+        "skills": ["AWS", "Azure", "Terraform", "Cloud Security"],
+        "postedDate": "2023-10-25",
+        "applicationLink": "https://example.com/apply/cloudarchitect"
+    },
+    {
+        "jobTitle": "Full Stack Developer",
+        "company": "Web Wizards",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["React", "Node.js", "MongoDB", "GraphQL"],
+        "postedDate": "2023-10-28",
+        "applicationLink": "https://example.com/apply/fullstack"
+    },
+    {
+        "jobTitle": "AI Engineer",
+        "company": "AI Solutions",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["Python", "TensorFlow", "PyTorch", "NLP"],
+        "postedDate": "2023-10-30",
+        "applicationLink": "https://example.com/apply/aiengineer"
+    },
+    {
+        "jobTitle": "QA Engineer",
+        "company": "Quality Assurance Inc.",
+        "workingType": "On-Site",
+        "jobType": "Full-Time",
+        "skills": ["Selenium", "JIRA", "Automation Testing", "Manual Testing"],
+        "postedDate": "2023-11-01",
+        "applicationLink": "https://example.com/apply/qaengineer"
+    },
+    {
+        "jobTitle": "Technical Writer",
+        "company": "DocuTech",
+        "workingType": "Remote",
+        "jobType": "Part-Time",
+        "skills": ["Technical Documentation", "Markdown", "Git", "API Documentation"],
+        "postedDate": "2023-11-03",
+        "applicationLink": "https://example.com/apply/technicalwriter"
+    },
+    {
+        "jobTitle": "Network Engineer",
+        "company": "Networking Pros",
+        "workingType": "On-Site",
+        "jobType": "Full-Time",
+        "skills": ["Cisco", "Routing", "Switching", "Firewalls"],
+        "postedDate": "2023-11-05",
+        "applicationLink": "https://example.com/apply/networkengineer"
+    },
+    {
+        "jobTitle": "Game Developer",
+        "company": "Game Studios",
+        "workingType": "Hybrid",
+        "jobType": "Full-Time",
+        "skills": ["Unity", "C#", "3D Modeling", "Game Physics"],
+        "postedDate": "2023-11-07",
+        "applicationLink": "https://example.com/apply/gamedeveloper"
+    },
+    {
+        "jobTitle": "Digital Marketing Specialist",
+        "company": "Marketing Pros",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["SEO", "Google Ads", "Social Media Marketing", "Analytics"],
+        "postedDate": "2023-11-09",
+        "applicationLink": "https://example.com/apply/digitalmarketing"
+    },
+    {
+        "jobTitle": "Sales Executive",
+        "company": "Sales Innovators",
+        "workingType": "On-Site",
+        "jobType": "Full-Time",
+        "skills": ["CRM", "Negotiation", "Sales Strategy", "Client Management"],
+        "postedDate": "2023-11-11",
+        "applicationLink": "https://example.com/apply/salesexecutive"
+    },
+    {
+        "jobTitle": "HR Manager",
+        "company": "People First",
+        "workingType": "Hybrid",
+        "jobType": "Full-Time",
+        "skills": ["Recruitment", "Employee Relations", "HR Policies", "Payroll"],
+        "postedDate": "2023-11-13",
+        "applicationLink": "https://example.com/apply/hrmanager"
+    },
+    {
+        "jobTitle": "Financial Analyst",
+        "company": "Finance Experts",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["Excel", "Financial Modeling", "Forecasting", "Data Analysis"],
+        "postedDate": "2023-11-15",
+        "applicationLink": "https://example.com/apply/financialanalyst"
+    },
+    {
+        "jobTitle": "Content Writer",
+        "company": "Content Creators",
+        "workingType": "Remote",
+        "jobType": "Part-Time",
+        "skills": ["SEO Writing", "Blogging", "Copywriting", "Content Strategy"],
+        "postedDate": "2023-11-17",
+        "applicationLink": "https://example.com/apply/contentwriter"
+    },
+    {
+        "jobTitle": "Customer Support Specialist",
+        "company": "Support Solutions",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["Zendesk", "Customer Service", "Troubleshooting", "Communication"],
+        "postedDate": "2023-11-19",
+        "applicationLink": "https://example.com/apply/customersupport"
+    },
+    {
+        "jobTitle": "Blockchain Developer",
+        "company": "Blockchain Innovators",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["Solidity", "Ethereum", "Smart Contracts", "Cryptography"],
+        "postedDate": "2023-11-21",
+        "applicationLink": "https://example.com/apply/blockchaindeveloper"
+    },
+    {
+        "jobTitle": "System Administrator",
+        "company": "IT Solutions",
+        "workingType": "On-Site",
+        "jobType": "Full-Time",
+        "skills": ["Linux", "Windows Server", "Networking", "Troubleshooting"],
+        "postedDate": "2023-11-23",
+        "applicationLink": "https://example.com/apply/systemadmin"
+    },
+    {
+        "jobTitle": "Business Analyst",
+        "company": "Business Insights",
+        "workingType": "Hybrid",
+        "jobType": "Full-Time",
+        "skills": ["SQL", "Tableau", "Data Visualization", "Requirements Gathering"],
+        "postedDate": "2023-11-25",
+        "applicationLink": "https://example.com/apply/businessanalyst"
+    },
+    {
+        "jobTitle": "Machine Learning Engineer",
+        "company": "AI Innovators",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["Python", "TensorFlow", "Scikit-learn", "Deep Learning"],
+        "postedDate": "2023-11-27",
+        "applicationLink": "https://example.com/apply/machinelearning"
+    },
+    {
+        "jobTitle": "Graphic Designer",
+        "company": "Creative Studio",
+        "workingType": "Remote",
+        "jobType": "Part-Time",
+        "skills": ["Photoshop", "Illustrator", "InDesign", "Branding"],
+        "postedDate": "2023-11-29",
+        "applicationLink": "https://example.com/apply/graphicdesigner"
+    },
+    {
+        "jobTitle": "Project Manager",
+        "company": "Project Pros",
+        "workingType": "Hybrid",
+        "jobType": "Full-Time",
+        "skills": ["Agile", "Scrum", "Project Planning", "Risk Management"],
+        "postedDate": "2023-12-01",
+        "applicationLink": "https://example.com/apply/projectmanager"
+    },
+    {
+        "jobTitle": "Database Administrator",
+        "company": "Data Solutions",
+        "workingType": "On-Site",
+        "jobType": "Full-Time",
+        "skills": ["SQL", "MySQL", "PostgreSQL", "Database Optimization"],
+        "postedDate": "2023-12-03",
+        "applicationLink": "https://example.com/apply/databaseadmin"
+    },
+    {
+        "jobTitle": "SEO Specialist",
+        "company": "Digital Marketing Pros",
+        "workingType": "Remote",
+        "jobType": "Full-Time",
+        "skills": ["SEO", "Google Analytics", "Keyword Research", "On-Page SEO"],
+        "postedDate": "2023-12-05",
+        "applicationLink": "https://example.com/apply/seospecialist"
+    }
+]

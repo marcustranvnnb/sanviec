@@ -1,0 +1,280 @@
+:root {
+    /* Colors */
+    --vietnamese-red: #d32f2f; /* Red for luck and prosperity */
+    --vietnamese-gold: #ffd700; /* Gold for wealth and happiness */
+    --vietnamese-green: #4caf50; /* Green for nature and rice fields */
+    --vietnamese-blue: #2196f3; /* Blue for sky and water */
+    --vietnamese-brown: #8d6e63; /* Earth tones for traditional materials */
+    --vietnamese-white: #ffffff; /* White for contrast */
+    --vietnamese-gray: #f5f5f5; /* Light gray for backgrounds */
+    --vietnamese-dark: #121212; /* Dark mode background */
+
+    /* Fonts */
+    --font-primary: 'Be Vietnam Pro', sans-serif;
+
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+
+    /* Borders */
+    --border-radius: 4px;
+    --border-width: 1px;
+
+    /* Breakpoints */
+    --breakpoint-mobile: 768px;
+    --breakpoint-tablet: 992px;
+    --breakpoint-desktop: 1200px;
+}
+
+/* Import Be Vietnam Pro and FontAwesome for icons */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Base Styles */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--vietnamese-gray);
+    margin: 0;
+    padding: var(--spacing-large);
+    color: var(--vietnamese-brown);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--vietnamese-dark);
+    color: var(--vietnamese-white);
+}
+
+.dark-mode .job-card {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.dark-mode .skill-tag {
+    background-color: #333;
+    color: var(--vietnamese-white);
+    border-color: #444;
+}
+
+.dark-mode .apply-link {
+    background-color: var(--vietnamese-red);
+    color: var(--vietnamese-white);
+}
+
+.dark-mode .apply-link:hover {
+    background-color: var(--vietnamese-white);
+    color: var(--vietnamese-red);
+}
+
+/* Search Results Heading */
+.search-results-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--vietnamese-red);
+    margin-bottom: var(--spacing-large);
+}
+
+/* Filter Bar */
+.filter-bar {
+    display: flex;
+    gap: var(--spacing-small);
+    margin-bottom: var(--spacing-large);
+}
+
+.filter-bar select,
+.filter-bar input {
+    padding: var(--spacing-small);
+    border: var(--border-width) solid var(--vietnamese-brown);
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+}
+
+/* Job Container */
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+    justify-content: center;
+}
+
+/* Job Card */
+.job-card {
+    background: linear-gradient(135deg, var(--vietnamese-white), var(--vietnamese-gray));
+    border: var(--border-width) solid var(--vietnamese-brown);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-medium);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(20% - 40px); /* 5 cards per row */
+    max-width: calc(20% - 40px);
+    box-sizing: border-box;
+}
+
+.job-card.featured::before {
+    content: 'Featured';
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    background-color: var(--vietnamese-red);
+    color: var(--vietnamese-white);
+    padding: var(--spacing-small) 30px;
+    transform: rotate(45deg);
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Job Title */
+.job-title {
+    font-size: 1.5em;
+    margin-bottom: var(--spacing-small);
+    color: var(--vietnamese-red);
+}
+
+/* Company Name */
+.company {
+    font-size: 1.2em;
+    color: var(--vietnamese-brown);
+    margin-bottom: var(--spacing-small);
+    transition: color 0.3s ease;
+}
+
+.company:hover {
+    color: var(--vietnamese-red);
+    cursor: pointer;
+}
+
+/* Working Type and Job Type */
+.working-type,
+.job-type {
+    font-size: 0.9em;
+    color: var(--vietnamese-brown);
+    margin-bottom: var(--spacing-small);
+}
+
+.working-type i,
+.job-type i,
+.posted-date i {
+    margin-right: var(--spacing-small);
+    color: var(--vietnamese-brown);
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+.skill-tag {
+    background-color: var(--vietnamese-gray);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius);
+    font-size: 0.8em;
+    color: var(--vietnamese-brown);
+    border: var(--border-width) solid var(--vietnamese-brown);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: var(--vietnamese-red);
+    color: var(--vietnamese-white);
+    border-color: var(--vietnamese-red);
+    cursor: pointer;
+}
+
+/* Posted Date */
+.posted-date {
+    font-size: 0.8em;
+    color: var(--vietnamese-brown);
+    margin-bottom: var(--spacing-small);
+}
+
+/* Apply Link */
+.apply-link {
+    display: inline-block;
+    background-color: var(--vietnamese-red);
+    color: var(--vietnamese-white);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.apply-link i {
+    margin-left: var(--spacing-small);
+    transition: transform 0.3s ease;
+}
+
+.apply-link:hover {
+    background-color: var(--vietnamese-white);
+    color: var(--vietnamese-red);
+    border: var(--border-width) solid var(--vietnamese-red);
+}
+
+.apply-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Urgency Bar */
+.urgency-bar {
+    height: 5px;
+    background-color: var(--vietnamese-gray);
+    border-radius: 2px;
+    margin-bottom: var(--spacing-small);
+}
+
+.urgency-progress {
+    height: 100%;
+    background-color: var(--vietnamese-red);
+    border-radius: 2px;
+}
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    border: 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: var(--breakpoint-desktop)) {
+    .job-card {
+        flex: 1 1 calc(25% - 40px); /* 4 cards per row */
+        max-width: calc(25% - 40px);
+    }
+}
+
+@media screen and (max-width: var(--breakpoint-tablet)) {
+    .job-card {
+        flex: 1 1 calc(33.333% - 40px); /* 3 cards per row */
+        max-width: calc(33.333% - 40px);
+    }
+}
+
+@media screen and (max-width: var(--breakpoint-mobile)) {
+    .job-card {
+        flex: 1 1 calc(50% - 40px); /* 2 cards per row */
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .job-card {
+        flex: 1 1 calc(100% - 40px); /* 1 card per row */
+        max-width: calc(100% - 40px);
+    }
+}

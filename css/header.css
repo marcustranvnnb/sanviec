@@ -1,0 +1,245 @@
+:root {
+    /* Colors */
+    --vietnamese-red: #d32f2f;
+    --vietnamese-gold: #ffd700;
+    --vietnamese-green: #4caf50;
+    --vietnamese-blue: #2196f3;
+    --vietnamese-brown: #8d6e63;
+    --vietnamese-white: #ffffff;
+    --vietnamese-gray: #f5f5f5;
+
+    /* Fonts */
+    --font-primary: 'Be Vietnam Pro', sans-serif;
+
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+
+    /* Borders */
+    --border-radius: 4px;
+    --border-width: 1px;
+
+    /* Breakpoints */
+    --breakpoint-mobile: 768px;
+}
+
+/* Import Be Vietnam Pro from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+/* Header Container */
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-medium);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Title */
+.logo h1 {
+    margin: 0;
+    font-size: clamp(24px, 5vw, 32px);
+    color: var(--vietnamese-red);
+    font-family: var(--font-primary);
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Form Styling */
+header form {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-small);
+    max-width: 600px;
+}
+
+/* Input Fields */
+header input[type="text"],
+header select {
+    padding: var(--spacing-small);
+    flex: 1;
+    border: var(--border-width) solid var(--vietnamese-brown);
+    border-radius: var(--border-radius);
+    background-color: var(--vietnamese-white);
+    font-family: var(--font-primary);
+    color: var(--vietnamese-brown);
+}
+
+header input[type="text"]:focus,
+header select:focus {
+    outline: none;
+    border-color: var(--vietnamese-red);
+    box-shadow: 0 0 5px var(--vietnamese-red);
+}
+
+/* Button Styling */
+.btn {
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--vietnamese-red);
+    color: var(--vietnamese-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--vietnamese-white);
+    color: var(--vietnamese-red);
+    border: var(--border-width) solid var(--vietnamese-red);
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    gap: var(--spacing-medium);
+}
+
+/* Filter Form */
+.filter-form {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+}
+
+.filter-form select {
+    padding: var(--spacing-small);
+    border: var(--border-width) solid var(--vietnamese-brown);
+    border-radius: var(--border-radius);
+    background-color: var(--vietnamese-white);
+    font-family: var(--font-primary);
+    color: var(--vietnamese-brown);
+    cursor: pointer;
+}
+
+.filter-form select:focus {
+    border-color: var(--vietnamese-red);
+    box-shadow: 0 0 5px var(--vietnamese-red);
+}
+
+/* Apply Button */
+.apply-button {
+    padding: var(--spacing-small) var(--spacing-medium);
+    background-color: var(--vietnamese-red);
+    color: var(--vietnamese-white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--font-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: var(--vietnamese-white);
+    color: var(--vietnamese-red);
+    border: var(--border-width) solid var(--vietnamese-red);
+}
+
+/* Sort Options */
+.sort-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-small);
+}
+
+.sort-options label {
+    font-family: var(--font-primary);
+    color: var(--vietnamese-brown);
+    font-size: 14px;
+}
+
+.sort-options select {
+    padding: var(--spacing-small);
+    border: var(--border-width) solid var(--vietnamese-brown);
+    border-radius: var(--border-radius);
+    background-color: var(--vietnamese-white);
+    font-family: var(--font-primary);
+    color: var(--vietnamese-brown);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sort-options select:focus {
+    outline: none;
+    border-color: var(--vietnamese-red);
+    box-shadow: 0 0 5px var(--vietnamese-red);
+}
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    border: 0;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: var(--breakpoint-mobile)) {
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-small);
+    }
+
+    .logo h1 {
+        text-align: center;
+    }
+
+    header form {
+        flex-direction: column;
+        gap: var(--spacing-small);
+    }
+
+    header input[type="text"],
+    header select {
+        width: 100%;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: var(--spacing-small);
+    }
+
+    .filter-form {
+        flex-direction: column;
+        gap: var(--spacing-small);
+    }
+
+    .apply-button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sort-options {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-small);
+    }
+
+    .sort-options label {
+        text-align: center;
+    }
+
+    .sort-options select {
+        width: 100%;
+    }
+}

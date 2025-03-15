@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="../css/header.css"> <!-- Correct path -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <h1><a href="../html/main.html">SanViec</a></h1>
+        </div>
+
+        <form method="GET" action="../html/search.html"> <!-- Correct path -->
+            <input type="text" name="search" placeholder="Tìm kiếm công việc">
+            <button type="submit">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </form>
+
+        <div class="filters">
+            <form method="GET" action="../html/search.html" class="filter-form">
+                <select name="jobtype">
+                    <option value="all">Tất cả loại hình công việc</option>
+                    <option value="fulltime">Toàn thời gian</option>
+                    <option value="parttime">Bán thời gian</option>
+                    <option value="contractor">Hợp đồng</option>
+                    <option value="internship">Thực tập</option>
+                </select>
+        
+                <select name="workingtype">
+                    <option value="all">Tất cả hình thức làm việc</option>
+                    <option value="remote">Từ xa</option>
+                    <option value="hybrid">Kết hợp</option>
+                    <option value="onsite">Tại văn phòng</option>
+                </select>
+        
+                <button type="submit" class="apply-button">Áp dụng</button>
+            </form>
+        </div>
+
+        <div class="sort-options">
+            <select id="sort" name="sort">
+                <option value="most-recent">Mới nhất</option>
+                <option value="relevance">Liên quan</option>
+            </select>
+        </div>
+
+    </div>
+</header>
